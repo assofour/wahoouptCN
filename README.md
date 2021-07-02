@@ -4,7 +4,7 @@
 # 适用范围
 Wahoo目前发布的码表有Elemnt, Elemnt Bolt, Elemnt Roam, new Elemnt Bolt（或者称为 v2)，以下方法已经经过验证截止July 2, 2021可以成功升级的有
 
--Elemnt Bolt
+- Elemnt Bolt
 -<li>Elemnt Roam</li>
 -<li>new Elemnt Bolt（或者称为 v2)</li>
 
