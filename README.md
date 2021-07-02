@@ -25,7 +25,9 @@ Wahoo目前发布的码表有Elemnt（停产）, Elemnt Bolt（停产）, Elemnt
 ### 获得文件
 
 Wahoo官方的版本检查文件在 http://bolt.wahoofitness.com/boltapp/version.json，如有能力，可以自行下载。 Std-version是正式版本（有时候官网还没有宣发，这里已经能看到更新的版本了），beta-version是测试版本，可以尝鲜，alpha这种版本不建议了。
-'''
+
+2021年7月2日文件样本
+```git
 {
   "std-version": 12072,
   "std-url": "https://wahoo-cloud-eu.wahooligan.com/firmware/elemnt/boltapp/12072/BoltApp.apk",
@@ -34,7 +36,7 @@ Wahoo官方的版本检查文件在 http://bolt.wahoofitness.com/boltapp/version
   "alpha-version": 12504,
   "alpha-url": "https://wahoo-cloud-eu.wahooligan.com/firmware/elemnt/boltapp/12504/BoltApp.apk"
 }
-'''
+```
 ### 文件命名
 虽然从下载的域名以及文件名内使用了Bolt的字样，但是无论从版本号，还是实践来看这个版本里所指示的固件适用于“适用范围”里面已经验证的机型。原始文件命名是BoltApp.apk，但在复制到文件系统内时，必须去除“.apk”的后缀名。例如“BoltApp12072.apk”修改为"BoltApp"，注意大小写严格遵循这个式样。
 
