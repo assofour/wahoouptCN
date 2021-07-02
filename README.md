@@ -24,7 +24,7 @@ Wahoo目前发布的码表有Elemnt（停产）, Elemnt Bolt（停产）, Elemnt
 
 ### 获得文件
 
-Wahoo官方的版本检查文件在 http://bolt.wahoofitness.com/boltapp/version.json，如有能力，可以自行下载。 Std-version是正式版本（有时候官网还没有宣发，这里已经能看到更新的版本了），beta-version是测试版本，可以尝鲜，alpha这种版本不建议了。
+Wahoo官方的版本检查文件在 http://bolt.wahoofitness.com/boltapp/version.json 如有能力，可以自行下载。 Std-version是正式版本（有时候官网还没有宣发，这里已经能看到更新的版本了），beta-version是测试版本，可以尝鲜，alpha这种版本不建议了。
 
 2021年7月2日文件样本
 ```git
@@ -45,7 +45,7 @@ Wahoo官方的版本检查文件在 http://bolt.wahoofitness.com/boltapp/version
 一般来说，使用USB电缆在“开机”状态下连接码表和PC USB端口，无需驱动，能在文件管理器里直接访问码表的部分文件系统，找到“system update elemnt”目录，在此目录之下新建一个目录，命名方式为版本号，例如版本11604，那么新建目录严格为“11604”，并在该目录下，复制“BoltApp”文件放入。
 
 ### 连接电脑 Mac OS
-安装Google官方的Android File Transfer应用，地址https://dl.google.com/dl/androidjumper/mtp/current/AndroidFileTransfer.dmg, 或从repo下载。使用USB电缆在“开机”状态下连接码表和Mac的USB端口，无需驱动，Android File Transfer应用自动打开并列出可访问的文件系统，找到“system update elemnt”目录，在此目录之下新建一个目录，命名方式为版本号，例如版本11604，那么新建目录严格为“11604”，并在该目录下，复制“BoltApp”文件放入。
+安装Google官方的Android File Transfer应用，地址 https://dl.google.com/dl/androidjumper/mtp/current/AndroidFileTransfer.dmg, 或从repo下载。使用USB电缆在“开机”状态下连接码表和Mac的USB端口，无需驱动，Android File Transfer应用自动打开并列出可访问的文件系统，找到“system update elemnt”目录，在此目录之下新建一个目录，命名方式为版本号，例如版本11604，那么新建目录严格为“11604”，并在该目录下，复制“BoltApp”文件放入。
 
 注意部分机型上会看到“system update”目录，<b>不要 不要 不要</b> 使用这个目录，轻则无效，重则变砖。
 
