@@ -5,16 +5,16 @@
 Wahoo目前发布的码表有Elemnt, Elemnt Bolt, Elemnt Roam, new Elemnt Bolt（或者称为 v2)，以下方法已经经过验证截止July 2, 2021可以成功升级的有
 
 - Elemnt Bolt
--<li>Elemnt Roam</li>
--<li>new Elemnt Bolt（或者称为 v2)</li>
+- Elemnt Roam
+- new Elemnt Bolt（或者称为 v2)
 
 以下Windows系统已验证的有
 
--<li>Windows 10</li>
+- Windows 10
 
 以下Mac OS系统已验证的有
 
--<li>Mac OS Big Sur 11.4</li>
+- Mac OS Big Sur 11.4
 
 ## 升级文件
 ### 命名
