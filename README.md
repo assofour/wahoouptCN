@@ -1,6 +1,6 @@
 # 概述
 中国大陆车友使用Wahoo Fitness码表，因为不可描述的原因，（除了特定的条件下）无法通过互联网正常升级固件，许多车友不得不频繁至当地车店进行有偿或无偿服务才能顺利升级。故特开此项目。保存码表的官方升级包以及离线升级方法（非ADB），简单地复制文件即可完成升级。
-当然由于Wahoo码表固件采用的是极致裁剪的Android架构，但还是Android，adb大法也是可行的，但是由于adb安装依赖工具链的门槛对于非码农来说实在太高，在此不做赘述。有兴趣的可以到b站查看 https://www.bilibili.com/video/BV1YT4y1F7AW/ 。
+当然由于Wahoo码表固件采用的是极致裁剪的Android架构，但还是Android，adb大法也是可行的，但是由于adb安装依赖工具链的门槛对于非码农来说实在太高，在此不做赘述。有兴趣的可以到b站查看（非本文所述方法） https://www.bilibili.com/video/BV1YT4y1F7AW/ 。
 
 # 免责
 以下内容均为器材爱好者的极端不负责任的自我尝试，如遇失败，无效变砖等等不可预期之后果，本人不承担任何道德以及法律责任。
@@ -25,6 +25,10 @@ Wahoo目前发布的码表有Elemnt（停产）, Elemnt Bolt（停产）, Elemnt
 
 ### 获得文件
 
+从repo的列表中，进入firmware目录，所有的固件都采用
+BoltApp + 版本号 + .apk
+的模式进行命名，最新的固件版本号一定是最高的那个，此处仅提供正式发布的标准版固件。找到文件后，下载至本地磁盘并按如下一节描述对文件进行改名处理。
+
 Wahoo官方的版本检查文件在 http://bolt.wahoofitness.com/boltapp/version.json 如有能力，可以自行下载。 Std-version是正式版本（有时候官网还没有宣发，这里已经能看到更新的版本了），beta-version是测试版本，可以尝鲜，alpha这种版本不建议了。
 
 2021年7月2日文件样本
@@ -39,9 +43,6 @@ Wahoo官方的版本检查文件在 http://bolt.wahoofitness.com/boltapp/version
 }
 ```
 
-或从repo的列表中，进入firmware目录，所有的固件都采用
-BoltApp + 版本号 + .apk
-的模式进行命名，最新的固件版本号一定是最高的那个，此处仅提供正式发布的标准版固件。找到文件后，下载至本地磁盘并按如下一节描述对文件进行改名处理。
 - [ ] Todo: Add a script to pull down files automatically.
 
 ### 文件命名
@@ -61,7 +62,7 @@ BoltApp + 版本号 + .apk
 
 # 彩蛋 - 地图升级
 
-Wahoo的地图本身是采用了Openstreetmap（OSM）的底图数据，该数据可以在 https://www.openstreetmap.org/ 下载。通过原始数据，通过一系列的脚本 https://github.com/treee111/wahooMapsCreator ，可以会获得需要的可以在Wahoo码表上使用的地图文件，缩放级别为8。然而，运行这个脚本需要先下载约9G原始底图，配置一堆本地OSM环境和工具以及数个小时的运行时间，如下谈及的地图是经过以上流程构建完成的地图文件，随取复制即可。简而言之，如果你更新不了地图，那么简单按照如下步骤执行，那么Wahoo上就有中国地图了。
+Wahoo的地图本身是采用了Openstreetmap（OSM）的底图数据，该数据可以在 https://www.openstreetmap.org/ 下载。通过原始数据，通过一系列的脚本 https://github.com/treee111/wahooMapsCreator ，可以获得在Wahoo码表上能使用的地图文件，地图缩放级别为8。然而，运行这个脚本需要先下载约9G原始底图，配置一堆本地OSM环境和工具以及数个小时的运行时间。如下谈及的地图是经过以上流程构建完成的地图文件，随取复制即可。简而言之，如果你更新不了地图，那么简单按照如下步骤执行，那么Wahoo上就有中国地图了。
 
 地图的下载链接
 
