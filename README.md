@@ -70,7 +70,7 @@ Wahoo的地图本身是采用了Openstreetmap（OSM）的底图数据，该数�
 ```
 
  - 下载地图到本地，通过某种工具解压缩，将看到各种一大堆的数字命名的目录
- - 将这些目录复制到 \maps\tiles\8\ 下
+ - 将这些目录复制到 \maps\tiles\8\ 下，目录结构请见 Device Map Dir Structure.png
  - 删除\maps\temp\下所有的临时文件
  - 重新启动码表，到导航视图下，看看路网是否出现 
 
