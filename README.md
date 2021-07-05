@@ -29,7 +29,7 @@ Wahoo目前发布的码表有Elemnt（停产）, Elemnt Bolt（停产）, Elemnt
 BoltApp + 版本号 + .apk
 的模式进行命名，最新的固件版本号一定是最高的那个，此处仅提供正式发布的标准版固件。找到文件后，下载至本地磁盘并按如下一节描述对文件进行改名处理。
 
-Wahoo官方的版本检查文件在 http://bolt.wahoofitness.com/boltapp/version.json 如有能力，可以自行下载。 Std-version是正式版本（有时候官网还没有宣发，这里已经能看到更新的版本了），beta-version是测试版本，可以尝鲜，alpha这种版本不建议了。
+所有的固件均根据Wahoo[官方的版本检查文件](http://bolt.wahoofitness.com/boltapp/version.json) 下载如有能力，可以自行下载。 Std-version是正式版本（有时候官网还没有宣发，这里已经能看到更新的版本了），beta-version是测试版本，可以尝鲜，alpha这种版本不建议了。
 
 2021年7月2日文件样本
 ```
@@ -53,7 +53,7 @@ Wahoo官方的版本检查文件在 http://bolt.wahoofitness.com/boltapp/version
 一般来说，使用USB电缆在“开机”状态下连接码表和PC USB端口，无需驱动，能在文件管理器里直接访问码表的部分文件系统，找到“system update elemnt”目录，在此目录之下新建一个目录，命名方式为版本号，例如版本11604，那么新建目录严格为“11604”，并在该目录下，复制“BoltApp”文件放入。
 
 ### Mac OS 操作系统 
-安装Google官方的Android File Transfer应用，地址 https://dl.google.com/dl/androidjumper/mtp/current/AndroidFileTransfer.dmg, 或从repo[下载安装文件](https://gitee.com/assofour/wahoouptCN.git)。使用USB电缆在“开机”状态下连接码表和Mac的USB端口，无需驱动，Android File Transfer应用自动打开并列出可访问的文件系统，找到“system update elemnt”目录，在此目录之下新建一个目录，命名方式为版本号，例如版本11604，那么新建目录严格为“11604”，并在该目录下，复制“BoltApp”文件放入。
+安装Google官方的Android File Transfer应用，[Google官方下载](https://dl.google.com/dl/androidjumper/mtp/current/AndroidFileTransfer.dmg), 或从repo[下载安装文件](https://gitee.com/assofour/wahoouptCN.git)。使用USB电缆在“开机”状态下连接码表和Mac的USB端口，无需驱动，Android File Transfer应用自动打开并列出可访问的文件系统，找到“system update elemnt”目录，在此目录之下新建一个目录，命名方式为版本号，例如版本11604，那么新建目录严格为“11604”，并在该目录下，复制“BoltApp”文件放入。
 
 注意部分机型上会看到“system update”目录，<b>不要 不要 不要</b> 使用这个目录，轻则无效，重则变砖。
 
@@ -62,7 +62,7 @@ Wahoo官方的版本检查文件在 http://bolt.wahoofitness.com/boltapp/version
 
 # 彩蛋 - 地图升级
 
-Wahoo的地图本身是采用了Openstreetmap（OSM）的底图数据，该数据可以在 https://www.openstreetmap.org/ 下载。通过原始数据，通过一系列的脚本 https://github.com/treee111/wahooMapsCreator ，可以获得在Wahoo码表上能使用的地图文件，地图缩放级别为8。然而，运行这个脚本需要先下载约9G原始底图，配置一堆本地OSM环境和工具以及数个小时的运行时间。如下谈及的地图是经过以上流程构建完成的地图文件，随取复制即可。简而言之，如果你更新不了地图，那么简单按照如下步骤执行，那么Wahoo上就有中国地图了。
+Wahoo的地图本身是采用了Openstreetmap（OSM）的底图数据，该数据可以在[OSM官网](https://www.openstreetmap.org/) 下载。通过原始数据，通过[一个开源的脚本](https://github.com/treee111/wahooMapsCreator) 进行数据处理和构建，可以获得在Wahoo码表上能使用的地图文件，地图缩放级别为8。然而，运行这个脚本需要先下载约9G原始底图，配置一堆本地OSM环境和工具以及数个小时的运行时间。如下谈及的地图是经过以上流程构建完成的地图文件，随取复制即可。简而言之，如果你更新不了地图，那么简单按照如下步骤执行，那么Wahoo上就有中国地图了。
 
 地图的下载链接
 
