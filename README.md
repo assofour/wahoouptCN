@@ -61,11 +61,10 @@ BoltApp + 版本号 + .apk
 
 # 彩蛋 - 地图升级
 
-Wahoo的地图本身是采用了Openstreetmap（OSM）的底图数据，该数据可以在 https://www.openstreetmap.org/ 下载。通过原始数据，通过一系列的脚本 https://github.com/treee111/wahooMapsCreator，可以会获得需要的可以在Wahoo码表上使用的地图文件，缩放级别为8。
-
-简而言之，如果你更新不了地图，那么简单按照如下步骤执行，那么Wahoo上就有中国地图了。
+Wahoo的地图本身是采用了Openstreetmap（OSM）的底图数据，该数据可以在 https://www.openstreetmap.org/ 下载。通过原始数据，通过一系列的脚本 https://github.com/treee111/wahooMapsCreator ，可以会获得需要的可以在Wahoo码表上使用的地图文件，缩放级别为8。然而，运行这个脚本需要先下载约9G原始底图，配置一堆本地OSM环境和工具以及数个小时的运行时间，如下谈及的地图是经过以上流程构建完成的地图文件，随取复制即可。简而言之，如果你更新不了地图，那么简单按照如下步骤执行，那么Wahoo上就有中国地图了。
 
 地图的下载链接
+
 ```
 链接: https://pan.baidu.com/s/1WjDvU6kqKKmzN3DOf2Ykiw 提取码: gnkw 
 ```
