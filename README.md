@@ -22,9 +22,8 @@ Wahoo目前发布的码表有Elemnt（停产）, Elemnt Bolt（停产）, Elemnt
 - Mac OS Big Sur 11.4
 
 # 简单固件文件升级方法（推荐）
-## 升级文件
 
-### 获得文件
+## 获得固件升级文件
 
 从项目仓库的文件列表中，[进入firmware目录](https://gitee.com/assofour/wahoouptCN/tree/main/firmware)，所有的固件都采用
 BoltApp + 版本号 + .apk
@@ -46,7 +45,7 @@ BoltApp + 版本号 + .apk
 
 - [ ] Todo: Add a script to pull down files automatically.
 
-### 文件命名
+## 文件命名
 虽然从下载的域名以及文件名内使用了Bolt的字样，但是无论从版本号，还是实践来看这个版本里所指示的固件适用于“适用范围”里面已经验证的机型。原始文件命名是BoltApp.apk，但在复制到文件系统内时，必须去除“.apk”的后缀名。例如“BoltApp12072.apk”修改为"BoltApp"，注意大小写严格遵循这个式样。
 
 ## 连接电脑传输文件
@@ -82,7 +81,7 @@ List of devices attached
 
 ## 运行升级命令
 
-固件文件的获得参见以上节”获得文件“，注意本方法中，保留apk文件后缀名，在terminal中运行如下命令
+固件文件的获得参见以上节”获得固件升级文件“，注意本方法中，保留apk文件后缀名，在terminal中运行如下命令
 
 ```
 adb install -r ./BoltApp.apk
