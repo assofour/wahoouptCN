@@ -21,6 +21,7 @@ Wahoo目前发布的码表有Elemnt（停产）, Elemnt Bolt（停产）, Elemnt
 
 - Mac OS Big Sur 11.4
 
+# 简单固件文件升级方法（推荐）
 ## 升级文件
 
 ### 获得文件
@@ -59,6 +60,35 @@ BoltApp + 版本号 + .apk
 
 ## 关机完成固件升级
 以上文件传输完毕后，安全推出USB设备，拔除USB电缆，按下Power Off，按正常流程关机，如果一切顺利，可以看到下方出现“INSTALL...”字样说明已经在安装（可参见Bolt V2 Insting Sample.jpeg以及Elemnt Roam Insting Sample.jpeg），依据机型不同，通常在1-2分钟内完成后，自行重启。重启后，至SYSTEM INFO下查看版本号是否已经更新到预期。
+
+# ADB固件文件升级方法（码农运用）
+## 进入ADB Mode
+
+Bolt V2进入ADB模式的方法很简单，开机后，断开USB电缆的情况下，连续快速按Power键两次后，重新连接USB电缆，在terminal运行。
+以上方法在USB A - USB C上获得成功
+
+```
+adb devices
+```
+应输出
+
+List of devices attached
+43212xxxxxxx	device
+
+如果是如下信息，那么就继续按按钮
+
+List of devices attached
+43212xxxxxx	unauthorized
+
+## 运行升级命令
+
+固件文件的获得参见以上节”获得文件“，注意本方法中，保留apk文件后缀名，在terminal中运行如下命令
+
+```
+adb install -r ./BoltApp.apk
+```
+
+之后界面直接出现 INSTALL... 字样，后自动重启，升级完成
 
 # 彩蛋 - 地图升级
 
