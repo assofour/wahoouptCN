@@ -87,8 +87,11 @@ List of devices attached
 adb install -r ./BoltApp.apk
 ```
 
-之后界面直接出现 INSTALL... 字样，后自动重启，升级完成
+之后界面直接出现 INSTALL... 字样，后自动重启，升级完成。如果以上都顺利完成了，让Bolt为你高歌一曲
 
+```
+adb shell am broadcast -a com.wahoofitness.bolt.service.BBuzzerManager.MARIO
+```
 # 彩蛋 - 地图升级
 
 Wahoo的地图本身是采用了Openstreetmap（OSM）的底图数据，该数据可以在[OSM官网](https://www.openstreetmap.org/)下载。通过原始数据，通过[一个开源的脚本](https://github.com/treee111/wahooMapsCreator)进行数据处理和构建，可以获得在Wahoo码表上能使用的地图文件，地图缩放级别为8。然而，运行这个脚本需要先下载约9G原始底图，配置一堆本地OSM环境和工具以及数个小时的运行时间。如下谈及的地图是经过以上流程构建完成的地图文件，随取复制即可。简而言之，如果你更新不了地图，那么简单按照如下步骤执行，那么Wahoo上就有中国地图了。
