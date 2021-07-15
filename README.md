@@ -22,14 +22,6 @@ Wahoo目前发布的码表有Elemnt（停产）, Elemnt Bolt（停产）, Elemnt
 
 - Mac OS Big Sur 11.4
 
-# 简单固件文件升级方法（推荐）
-
-## 获得固件升级文件
-
-从项目仓库的文件列表中，[进入firmware目录](https://gitee.com/assofour/wahoouptCN/tree/main/firmware)，所有的固件都采用
-BoltApp + 版本号 + .apk
-的模式进行命名，最新的固件版本号一定是最高的那个，此处仅提供正式发布的标准版固件。找到文件后，下载至本地磁盘并按如下一节描述对文件进行改名处理。
-
 所有的固件均根据Wahoo[官方的版本检查文件](http://bolt.wahoofitness.com/boltapp/version.json)下载，无任何修改。如有能力，可以自行下载。 Std-version是正式版本（有时候官网还没有宣发，这里已经能看到更新的版本了），beta-version是测试版本，可以尝鲜，alpha这种版本不建议了。
 
 2021年7月2日文件样本
@@ -45,6 +37,14 @@ BoltApp + 版本号 + .apk
 ```
 
 - [ ] Todo: Add a script to pull down files automatically.
+
+# 简单固件文件升级方法（推荐）
+
+## 获得固件升级文件
+
+从项目仓库的文件列表中，[进入firmware目录](https://gitee.com/assofour/wahoouptCN/tree/main/firmware)，所有的固件都采用
+BoltApp + 版本号 + .apk
+的模式进行命名，最新的固件版本号一定是最高的那个，此处仅提供正式发布的标准版固件。找到文件后，下载至本地磁盘并按如下一节描述对文件进行改名处理。
 
 ## 文件命名
 虽然从下载的域名以及文件名内使用了Bolt的字样，但是无论从版本号，还是实践来看这个版本里所指示的固件适用于“适用范围”里面已经验证的机型。原始文件命名是BoltApp.apk，但在复制到文件系统内时，必须去除“.apk”的后缀名。例如“BoltApp12072.apk”修改为"BoltApp"，注意大小写严格遵循这个式样。
