@@ -2,7 +2,7 @@
 中国大陆车友使用Wahoo Fitness码表，因为不可描述的原因，（除了特定的条件下）无法通过互联网正常升级固件，许多车友不得不频繁至当地车店进行有偿或无偿服务才能顺利升级。故特开此项目。保存码表的官方升级包以及离线升级方法（非ADB），简单地复制文件即可完成升级。
 当然由于Wahoo码表固件采用的是极致裁剪的Android架构，但还是Android，adb大法也是可行的，但是由于adb安装依赖工具链的门槛对于非码农来说实在太高，在此不做赘述。有兴趣的可以[ 到b站查看 ](https://www.bilibili.com/video/BV1YT4y1F7AW/)（非本文所述方法） 。
 
-最新版本 2020-7-14 [12513](https://gitee.com/assofour/wahoouptCN/blob/main/firmware/BoltApp12513.apk) 
+最新版本 2020-7-23 [13008](https://gitee.com/assofour/wahoouptCN/blob/main/firmware/BoltApp13008.apk) 
 # 免责
 以下内容均为器材爱好者的极端不负责任的自我尝试，如遇失败，无效变砖等等不可预期之后果，本人不承担任何道德以及法律责任。
 WAHOO™, Elemnt Bolt, Elemnt Roam 均是Wahoo Fitness L.L.C.的注册商标。
