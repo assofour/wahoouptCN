@@ -2,7 +2,7 @@
 中国大陆车友使用Wahoo Fitness码表，因为不可描述的原因，（除了特定的条件下）无法通过互联网正常升级固件，许多车友不得不频繁至当地车店进行有偿或无偿服务才能顺利升级。故特开此项目。保存码表的官方升级包以及离线升级方法（非ADB），简单地复制文件即可完成升级。
 当然由于Wahoo码表固件采用的是极致裁剪的Android架构，但还是Android，adb大法也是可行的，但是由于adb安装依赖工具链的门槛对于非码农来说实在太高，在此不做赘述。有兴趣的可以[ 到b站查看 ](https://www.bilibili.com/video/BV1YT4y1F7AW/)（非本文所述方法） 。
 
-最新版本 2020-8-4 [13310](https://gitee.com/assofour/wahoouptCN/blob/main/firmware/BoltApp13310.apk) 
+最新版本 2020-8-4 [13311](https://gitee.com/assofour/wahoouptCN/blob/main/firmware/BoltApp13311.apk) 
 # 免责
 以下内容均为器材爱好者的极端不负责任的自我尝试，如遇失败，无效变砖等等不可预期之后果，本人不承担任何道德以及法律责任。
 WAHOO™, Elemnt Bolt, Elemnt Roam 均是Wahoo Fitness L.L.C.的注册商标。
@@ -50,10 +50,10 @@ BoltApp + 版本号 + .apk
 虽然从下载的域名以及文件名内使用了Bolt的字样，但是无论从版本号，还是实践来看这个版本里所指示的固件适用于“适用范围”里面已经验证的机型。原始文件命名是BoltApp.apk，但在复制到文件系统内时，必须去除“.apk”的后缀名。例如“BoltApp12072.apk”修改为"BoltApp"，注意大小写严格遵循这个式样。
 
 ## 连接电脑传输文件
-### Windows 操作系统 
+### Windows 操作系统
 一般来说，使用USB电缆在“开机”状态下连接码表和PC USB端口，无需驱动，能在文件管理器里直接访问码表的部分文件系统，找到“system update elemnt”目录，在此目录之下新建一个目录，命名方式为版本号，例如版本11604，那么新建目录严格为“11604”，并在该目录下，复制“BoltApp”文件放入。
 
-### Mac OS 操作系统 
+### Mac OS 操作系统
 安装Google官方的Android File Transfer应用，可从[Google官方下载](https://dl.google.com/dl/androidjumper/mtp/current/AndroidFileTransfer.dmg), 或从项目仓库[下载安装文件](https://gitee.com/assofour/wahoouptCN.git)。使用USB电缆在“开机”状态下连接码表和Mac的USB端口，无需驱动，Android File Transfer应用自动打开并列出可访问的文件系统，找到“system update elemnt”目录，在此目录之下新建一个目录，命名方式为版本号，例如版本11604，那么新建目录严格为“11604”，并在该目录下，复制“BoltApp”文件放入。
 
 注意部分机型上会看到“system update”目录，<b>不要 不要 不要</b> 使用这个目录，轻则无效，重则变砖。
@@ -100,13 +100,13 @@ Wahoo的地图本身是采用了Openstreetmap（OSM）的底图数据，该数�
 地图的下载链接
 
 ```
-百度网盘 链接: https://pan.baidu.com/s/1WjDvU6kqKKmzN3DOf2Ykiw 提取码: gnkw 
+百度网盘 链接: https://pan.baidu.com/s/1WjDvU6kqKKmzN3DOf2Ykiw 提取码: gnkw
 ```
 
  - 下载地图到本地，通过某种工具解压缩，将看到各种一大堆的数字命名的目录
  - 将这些目录复制到 \maps\tiles\8\ 下，目录结构请见 Device Map Dir Structure.png
  - 删除\maps\temp\下所有的临时文件
- - 重新启动码表，到导航视图下，看看路网是否出现 
+ - 重新启动码表，到导航视图下，看看路网是否出现
 
 # 疑问和问题
 
